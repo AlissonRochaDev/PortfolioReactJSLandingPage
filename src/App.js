@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/style.css';
+import BtnTopo from './components/btn_topo';
+import MenuMobile from './components/menu_mobile';
+import FooterPage from './components/footer';
+import BannerPage from './components/banner_page';
+import About from './components/about';
+import Project from './components/projects';
+import Contact from './components/contact';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BtnTopo />
+      <MenuMobile />
+
+      <main className="page">
+        <BannerPage />
+        <About />
+        <Project />
+        <Contact />
+      </main>
+
+      <FooterPage />
     </div>
   );
 }

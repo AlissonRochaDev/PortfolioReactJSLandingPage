@@ -1,0 +1,786 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+
+/* 1 rem = 16 pixels. */
+
+/* Formatação por TAGs. */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+h3{
+    padding: 0.6rem 0rem;
+    margin: 0px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60%;
+    width: 90%;
+    margin: auto;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: Montserrat-Regular;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+}
+
+header nav ul li a:hover {
+    color: #ff3700;
+}
+
+header nav ul li a {
+    position: relative;
+    animation-name: menu;
+    animation-duration: 1s;
+    transition: 100ms;
+}
+
+/* Formatação por IDs. */
+.homePage{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ff3700;
+}
+
+.top{
+    background-color: #ffffff;
+}
+
+.page{
+    padding-top: 2rem;
+    background-color: #000000;
+}
+
+.endPage{
+    text-align: center;
+    padding: 2rem 0rem;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Formatação por Class. */
+.imgBanner:hover{
+    transform: scale(1.1);
+}
+
+.titleBanner{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.textBanner{
+    display: flex;
+    flex-direction: column;
+}
+
+.iconeAt{
+    font-size: 4.2rem;
+    color: #ff3700;
+}
+
+.iconeAt:hover{
+    color: #ffffff;
+    cursor: default;
+}
+
+.nome{
+    font-size: 4.2rem;
+}
+
+.nome:hover{
+    color: #ff3700;
+    cursor: default;
+}
+
+.funcao{
+    font-size: 2rem;
+}
+
+.funcao:hover{
+    color: #ff3700;
+    cursor: default;
+}
+
+.descricao{
+    font-size: 1.2rem;
+}
+
+.descricao:hover{
+    color: #ff3700;
+    cursor: default;
+}
+
+.btnPortfolio{
+    display: flex;
+    gap: 1rem;
+}
+
+.GitHub{
+    width: 100%;
+    max-width: 90px;
+}
+
+.linkedin{
+    width: 100%;
+    max-width: 90px;
+}
+
+.about{
+    padding: 2.4rem 0.8rem;
+    background-color: #ff3700;
+    color: #ffffff;
+    text-align: center;
+    cursor: default;
+}
+
+.titleAbout{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.4rem;
+    cursor: default;
+}
+
+.boxHabil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.habil{
+    padding: 8px;
+    gap: 3rem;
+    font-size: 12px;
+    border: 0.1px #000000 solid;
+    border-radius: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: default;
+}
+
+.habil:hover{
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 1s;
+    border: none;
+}
+
+.projects{
+    text-align: center;
+    color: #ffffff;
+}
+
+.textProjects{
+    padding: 0rem 0.6rem;
+}
+
+.titleProjects{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    cursor: default;
+}
+
+.imgCard:hover{
+    transform: scale(1.02);
+    box-shadow: 5px 2px 2px #000000;
+}
+
+.imgGitHub{
+    width: 30px;
+}
+
+.contact{
+    color: #ffffff;
+    background-color: #ff3700;
+    text-align: center;
+}
+
+.infoCt{
+    cursor: default;
+}
+
+.formContact{
+    text-align: left;
+}
+
+.alignBtn{
+    display:  flex;
+    gap: 1rem;
+}
+
+.campForm{
+    width: 100%;
+    height: 32px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding-left: 4px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+}
+
+.campFormMsg{
+    width: 100%;
+    height: 100px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding-left: 4px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+}
+
+.campForm:focus, .campFormMsg:focus{
+    border: 2px solid #000000;
+}
+
+.btnForm{
+    width: 80px;
+    height: 35px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btnFormReset{
+    width: 80px;
+    height: 35px;
+    background-color: #fbff00;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btnForm:hover{
+    background-color: #056400;
+    border: 2px solid #000000;
+}
+
+.btnFormReset:hover{
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.mapsCt{
+    margin-top: 1.4rem;
+    background-color: #000000;
+}
+
+.listCtc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+}
+
+.linkWhatsApp{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.boxWhatsAapp{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.linkWhatsApp:hover{
+    font-weight: bolder;
+    color: #006400;
+    background-color: #ffffff;
+    padding: 0.4rem;
+    border-radius: 4px;
+}
+
+.iconCtc{
+    width: 45px;
+    height: 45px;
+    margin-right: 1.6rem;
+    transition: .4s;
+}
+
+.iconCtc:hover{
+    transform: scale(1.1);
+}
+
+.borderMaps{
+    border: none;
+    outline: none;
+}
+
+.btnNav{
+    margin: 0rem 0.6rem 0.6rem 0rem;
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+}
+
+.btnNavTopo{
+    width: 60px;
+    transition: .4s;
+}
+
+.btnNavTopo:hover{
+    transform: scale(1.1);
+}
+
+.infoWhatsApp{
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 10px;
+}
+
+/* =============== Código da Responsividade! ===================== */
+/* 1 rem = 16 pixels. */
+/* Resolução para Desktop/Notebook. */
+@media screen and (min-width: 998px){
+    .top{
+        padding: 1.2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wrap{
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+    }
+
+    .colum1{
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .imgLogotipo{
+        max-width: 230px;
+        margin: 0.8rem 0rem;
+    }
+
+    .bannerPage{
+        padding: 2rem 1.4rem 4rem 1.4rem;
+    }
+
+    .titleBanner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgBanner{
+        max-width: 340px;
+        border-radius: 50%;
+        transition: .4s;
+    }
+
+    .boxImgBanner{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .linkGitHub{
+        width: 100%;
+        max-width: 190px;
+        text-decoration: none;
+        font-size: 1.8rem;
+        background-color: #ffffff;
+        color: #000000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 1rem;
+        border: 6px solid #ff3700;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .linkLinkedin{
+        width: 100%;
+        max-width: 190px;
+        text-decoration: none;
+        font-size: 1.8rem;
+        background-color: #ffffff;
+        color: #000000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 1rem 2.4rem 1rem 1rem;
+        border: 6px solid #ff3700;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .linkGitHub:hover{
+        background-color: #ff6347;
+        border: 6px solid #ffffff;
+        transition: .3s;
+    }
+        
+    .linkLinkedin:hover{
+        background-color: #ff6347;
+        border: 6px solid #ffffff;
+        transition: .4s;
+    }
+
+    .gridProjects{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .cardProjects{
+        width: 100%;
+        color: #000000;
+        background-color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 4px;
+        cursor: default;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgCard{
+        width: 100%;
+        max-width: 310px;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        transition: .2s;
+    }
+
+    .repGitHub{
+        text-decoration: none;
+        font-size: 1rem;
+        color: #000000;
+        border: 2px solid #ff3700;
+        border-radius: 4px;
+        padding: 0.2rem 0.1rem;
+        margin: 1.2rem 2.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .repGitHub:hover{
+        background-color: #ff3700;
+    }
+
+    .boxContact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .infoCt{
+        text-align: left;
+    }
+
+    .iconRS{
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+    }
+    
+    .linkRS{
+        text-decoration: none;
+    }
+    
+    .iconIMG{
+        transition: .4s;
+    }
+    
+    .iconIMG:hover{
+        transform: scale(1.4);
+    }
+    
+    .infoCopy{
+        margin: 1rem 0rem;
+        border-top: 1px #ffffff solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .logotipoCopy{
+        width: 30px;
+    }
+}
+
+/* Resolução para Celular/Tablet. */
+@media screen and (max-width: 998px){
+    .imgLogotipo{
+        max-width: 140px;
+        margin: 1.2rem 0.6rem;
+    }
+
+    .menu-section nav {
+        display: none;
+    }
+
+    .one, .two, .three {
+        background-color: #ff3700;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+    /*Fullscreen*/
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background: #ffffff;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 25px;
+        top: 25px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+        background-color: #ff0000;
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+        background-color: #ff0000;
+    }
+
+    .menu-section.on nav ul {
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on nav ul a {
+        transition-duration: 0.5s;
+        font-size: 0.8rem;
+        display: block;
+        color: #000000;
+        padding: 0.6rem;
+    }
+
+    .menu-section.on nav ul .hide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+        font-size: 1.6rem;
+    }
+
+    .top{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .colum1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titleBanner{
+        padding: 0px 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.4rem;
+    }
+
+    .bannerPage{
+        padding-bottom: 4rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgBanner{
+        max-width: 300px;
+        border-radius: 50%;
+        transition: .4s;
+    }
+
+    .btnPortfolio{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linkGitHub{
+        width: 100%;
+        text-decoration: none;
+        font-size: 1.8rem;
+        background-color: #ffffff;
+        color: #000000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 6px solid #ff3700;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .linkLinkedin{
+        width: 100%;
+        text-decoration: none;
+        font-size: 1.8rem;
+        background-color: #ffffff;
+        color: #000000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border: 6px solid #ff3700;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .gridProjects{
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .cardProjects{
+        width: 100%;
+        color: #000000;
+        background-color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 4px;
+        cursor: default;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .imgCard{
+        width: 100%;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        transition: .2s;
+    }
+
+    .repGitHub{
+        max-width: 290px;
+        text-decoration: none;
+        font-size: 1rem;
+        color: #000000;
+        border: 2px solid #ff3700;
+        border-radius: 4px;
+        padding: 0.2rem 0.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .repGitHub:hover{
+        background-color: #ff3700;
+    }
+    
+    .ulContact{
+        padding-left: 0px;
+    }
+
+    .boxContact{
+        padding: 1rem;
+    }
+
+    .contact{
+        padding-top: 2rem;
+    }
+
+    .linkRS{
+        text-decoration: none;
+    }
+
+    .iconIMG{
+        max-width: 40px;
+    }
+
+    .infoCopy{
+        margin: 1rem 0rem;
+        font-size: 0.8rem;
+        border-top: 1px #ffffff solid;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .logotipoCopy{
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-group {
+        display: block;
+    }
+}
